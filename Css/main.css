@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+#header {
+  background-color: #222;
+  color: white;
+}
+
+#barra-superior {
+  width: 100%;
+  padding: 10px 20px;
+  display: grid;
+  /* Logo a la izquierda, menú a la derecha */
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+
+h1 {
+  font-size: 50px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#menu {
+  justify-self: end;
+}
+
+#menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 10;
+  display: flex;
+}
+
+#menu ul li {
+  display: inline-block;
+  margin-left: 25px;
+}
+
+#menu ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 32px;
+  transition: color 0.3s ease;
+}
+
+#menu ul li a:hover {
+  color: #ccc;
+}
+
+/* Dropdown Menu */
+#menu ul li {
+  position: relative;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 300px;
+  background-color: #333;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 100;
+}
+
+#menu ul li:hover .dropdown {
+  opacity: 1;
+  visibility: visible;
+}
+
+.dropdown-content {
+  padding: 15px;
+}
+
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.dropdown-item img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin-right: 15px;
+  border-radius: 4px;
+}
+
+#footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 25px 0;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+#logo {
+  float: left;
+}
+
+#home {
+  position: relative;
+  height: 90vh;
+  overflow: hidden;
+}
+
+#fondohometext {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+#fondohometext img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#about {
+  position: absolute;
+  top: 10%;
+  left: 30px;
+  color: white;
+  background-color: rgba(14, 13, 13, 0.5); 
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  z-index: 1;
+}
+
+#footer a:link {
+  color: white;
+}
+
+#footer a:visited {
+  color: gray;
+}
+
+
+.formulario {
+  position: absolute;
+  bottom: 25px;
+  left: 30px;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.formulario label {
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"] {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 1px;
+  font-size: 14px;
+  width: 100px;
+  height: 15px;
+}
+
+.formulario input[type="submit"] {
+  background-color: #0e0d0d;
+  color: white;
+  border: none;
+  padding: 0px 15px;
+  border-radius: 0px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.6s ease;
+}
+
+.formulario input[type="submit"]:hover {
+  background-color: #b6abac;
+}

@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+#header {
+    background-color: #222;
+    color: white;
+}
+
+#barra-superior {
+    width: 100%;
+    padding: 10px 20px;
+    display: grid;
+    /* Logo a la izquierda, menú a la derecha */
+    grid-template-columns: 1fr auto;
+    align-items: center;
+}
+
+h1 {
+    font-size: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#menu {
+    justify-self: end;
+}
+
+#menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 10;
+    display: flex;
+}
+
+#menu ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+#menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 32px;
+    transition: color 0.3s ease;
+}
+
+#menu ul li a:hover {
+    color: #ccc;
+}
+
+/* Dropdown Menu */
+#menu ul li {
+    position: relative;
+}
+
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 300px;
+    background-color: #333;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 100;
+}
+
+#menu ul li:hover .dropdown {
+    opacity: 1;
+    visibility: visible;
+}
+
+.dropdown-content {
+    padding: 15px;
+}
+
+.dropdown-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.dropdown-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 15px;
+    border-radius: 4px;
+}
+
+#footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 25px 0;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+#logo {
+    float: left;
+}
+
+#buttons1 {
+    text-align: center;
+    padding-top: 40px;
+
+
+
+}
+
+#buttonshop {
+    text-align: center;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 12px;
+    border: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+
+}
+
+
+
+#clearance {
+    text-align: center;
+    padding-top: 20px;
+
+}
+
+
+
+#sales {
+    text-align: center;
+}
+
+#deals {
+    text-align: center;
+
+}
+
+#fondoamarillo {
+    background-color: rgb(236, 240, 28);
+    margin-bottom: 2%;
+    padding: 50px 0;
+}

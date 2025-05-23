@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trek Bikes</title>
+  <link rel="stylesheet" href="./Css/main.css">
+</head>
+
+<body>
+
+  <header id="header">
+    <div id="barra-superior">
+      <div id="logo">
+        <h1>TREK</h1>
+      </div>
+      <nav id="menu">
+        <ul>
+          <li>
+            <a href="#">Mountain</a>
+            <div class="dropdown">
+              <div class="dropdown-content">
+                <div class="dropdown-item">
+                  <!-- anchor para pagina enduro -->
+                  <!-- anchor for page "enduro" -->
+                  <img src="./Assets/fondoopcion2.jpeg" alt="Trail Bike">
+                  Trail
+                </div>
+                <div class="dropdown-item">
+                  <a href="enduro.html" class="linkenduro">
+                    <img
+                      src="./Assets/png-clipart-trek-bicycle-corporation-27-5-mountain-bike-full-suspension-bicycle-bicycle-frame-bicycle.png"
+                      alt="Enduro Bike">
+                    Enduro
+                  </a>
+                </div>
+                <div class="dropdown-item">
+                  <img src="./Assets/Trek_Slash_Gen_6_2024_Team.png" alt="Downhill Bike">
+                  Downhill
+                </div>
+              </div>
+            </div>
+          </li>
+          <li><a href="#">Road</a></li>
+          <li><a href="#">Gravel</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="clear"></div>
+  </header>
+  <main>
+    <section id="home">
+      <div>
+        <p id="about">About Trek Bicycles
+          Founded in 1976, Trek Bicycles is a world-renowned brand committed to building high-performance bikes that
+          push the boundaries of technology and design. Whether you're a competitive cyclist, an adventure enthusiast,
+          or someone who simply enjoys cycling for fun, Trek has a bike for you. We offer a wide range of bicycles, from
+          road and mountain bikes to electric bikes, all engineered for quality, durability, and comfort.
+
+          At Trek, innovation is at the heart of everything we do, ensuring our bikes are built to perform at the
+          highest levels. Our goal is simple: to inspire and support cyclists around the world, one ride at a time.</p>
+      </div>
+      <div id="fondohometext">
+        <img src="./Assets/1849655-2560x1707-desktop-hd-trek-bikes-wallpaper.jpg" alt="fondohome">
+      </div>
+
+      <form action="/submit" method="post" class="formulario">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" />
+
+        <input type="submit" value="Send" />
+      </form>
+      <!-- background pic -->
+      <div id="fondohometext">
+        <img src="./Assets/1849655-2560x1707-desktop-hd-trek-bikes-wallpaper.jpg" alt="fondohome">
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer">
+    <footer id="footer">
+      <p>© Diego's Attempt | <a href="https://github.com/Diegoms0595/Final-Project">GitHub Repo</a></p>
+    </footer>
+
+  </footer>
+  <style>
+    #footer p {
+      color: #bdb6b6;
+      font-size: 20px;
+      text-align: center;
+      margin-top: 20px;
+    }
+  </style>
+
+</body>
+
+</html>
